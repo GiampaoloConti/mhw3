@@ -1,0 +1,225 @@
+body{
+    margin: 0px;
+    text-align: left;
+    font-size: 40px;
+    background-color: rgba(0, 255, 255, 0.098);
+}
+
+header{
+    height: 500px;
+    display: flex;
+    background-image: url(https://cdn.wallpapersafari.com/74/72/FU3Jis.jpg);
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    z-index: -1;
+}
+
+#Title{
+    color: white;
+    font-style: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(17, 16, 16, 0.395);
+    
+}
+
+#text_input{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 31%;
+    margin-top: -50px;
+    border : 1px solid rgba(0, 0, 0, 0.324);
+    background-color: white;
+    opacity: 0.9;
+    z-index: 2;
+    margin-right: 10px;
+    position: relative;
+
+}
+
+#text_output{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 31%;
+    margin-top: -50px;
+    border : 1px solid rgba(0, 0, 0, 0.326);
+    z-index: 2;
+    background-color: white;
+    opacity: 0.9;
+}
+
+.container{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+#options{
+    font-size: large;
+    width: 100%;
+    margin-right: 10%;
+}
+
+#testo_lingua{
+    font-size: 20px;
+    width: 100%;
+    padding-left: 8px;
+}
+
+#useful{
+    flex-direction: row;
+    height: 45px;
+    width: auto;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#useful1{
+    flex-direction: row;
+    height: 45px;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    z-index: 2;
+}
+
+.hidden{
+    display: none;
+}
+
+#lingua_decifrata{
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.268);
+    height: 50%;
+    margin-right: 20%;
+    font-size: 15px;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+}
+
+#text{
+    display: flex;
+    max-height:100%;
+    width: 100%;
+    font-size: 20px;
+    resize: none;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    position:absolute; top: 45px; left:0; right:0; bottom:0; padding:1em;
+}
+
+#box{
+    display: flex;
+    padding: 1em;
+    height: 80%;
+    width: 100%;
+    font-size: 20px;
+    resize: none;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#submit{
+    font-size: large;
+    width: auto;
+    margin-right: 20px;
+}
+
+@media (max-width : 700px){
+    #Title{
+        text-align: center;
+        font-size: 50px;
+        width: 70%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: -35%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #text_output{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 31%;
+        margin-top: 20px;
+        border : 1px solid rgba(0, 0, 0, 0.326);
+        z-index: 2;
+        background-color: white;
+        opacity: 0.9;
+    }
+
+    #text_input{
+        display: hidden;
+        flex-direction: column;
+        width: 90%;
+        height: 33%;
+        margin-top: 0px;
+        border : 1px solid rgba(0, 0, 0, 0.326);
+        z-index: 2;
+        background-color: white;
+        opacity: 0.9;
+    }
+
+    #testo_lingua{
+        font-size: 20px;
+        width: 100%;
+        padding-left: 8px;
+        margin-right: 5%;
+    }
+
+    #lingua_decifrata{
+        width: 100%;
+        border: 2px solid rgba(0, 0, 0, 0.268);
+        height: 50%;
+        margin-right: 20%;
+        font-size: 20px;
+        align-items: center;
+        font-family: 'Times New Roman', Times, serif;
+        display: flex;
+        justify-content: center;
+    }
+    
+
+}
+
+@media (max-width: 500px){
+    #options{
+        font-size: large;
+        width: 100%;
+        margin-right: 5%;
+    }
+
+
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(11, 74, 137);
+    height: 10%;
+    width: 100%;
+    color: white;
+    font-style: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 0.5em;
+}
